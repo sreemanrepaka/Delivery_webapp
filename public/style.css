@@ -144,3 +144,27 @@ footer .glyphicon {
 .navbar li a, .navbar .navbar-brand {
   color: #fff;
 }
+
+.button{
+  padding: 10px 40px;
+  background-color: #222831;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration:none !important;
+
+}
+
+.button:hover{
+  background-color: #fff;
+  color: #222831;
+  border: solid 1px #222831;
+}
+
+#trackbar{
+  border-radius: 30px;
+  padding:10px 40px;
+  color: #222831;
+  margin-top: 20px;
+  border: 2px solid #222831;
+  
+}

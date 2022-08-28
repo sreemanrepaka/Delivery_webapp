@@ -10,7 +10,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <script>
+  function message(){
+    alert("Submitted successfully!")
+}
+</script>
+    <title>DELWR.</title>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -21,15 +26,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#myPage">DELWR.</a>
+            <a class="navbar-brand" href="/">DELWR.</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="services.html">SERVICES</a></li>
-              <li><a href="portfolio.html">PORTFOLIO</a></li>
-              <li><a href="pricing.html">PRICING</a></li>
-              <li><a class="active" href="contact.html">CONTACT</a></li>
+              <li><a href="/about">ABOUT</a></li>
+              <li><a href="/services">SERVICES</a></li>
+              <li><a href="/portfolio">PORTFOLIO</a></li>
+              <li><a href="/pricing">PRICING</a></li>
+              <li><a class="active" href="/contact">CONTACT</a></li>
             </ul>
           </div>
         </div>
@@ -38,29 +43,37 @@
 <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
-      <div class="col-sm-5">
+      <div class="text-center" >
         <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-        <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
       </div>
-      <div class="col-sm-7 slideanim">
+      
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
         <div class="row">
-          <div class="col-sm-6 form-group">
+        <form action="/contact" method="get" onsubmit="message()">
+          <div class=" form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
           </div>
-          <div class="col-sm-6 form-group">
+          <div class=" form-group">
             <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
           </div>
         </div>
         <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
         <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
+          <div class="col-sm-12 form-group text-center">
+            <button class="button" type="submit">Send</button>
           </div>
         </div>
+      </form>
       </div>
     </div>
+
+    
+    <div class="text-center">
+      <br><br><br>
+    <p><span class="glyphicon glyphicon-map-marker"></span> Pune, India</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +91 112233445</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> contact@delwr.com</p>
   </div>
   
     
